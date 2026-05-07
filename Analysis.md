@@ -33,9 +33,9 @@
 
 ### 2.2. Use case description
 
-#### 2.2.1. 계정 및 권한 관리
+### 2.2.1. 계정 및 권한 관리
 
-##### 2.2.1.1. Use Case #1 : Join
+#### 2.2.1.1. Use Case #1 : Join
 
 |GENERAL CHARACTERISTICS||
 |:---|:---|
@@ -72,7 +72,7 @@
 |Due Date||
 |Etc||
 
-##### 2.2.1.2. Use Case #2 : Login
+#### 2.2.1.2. Use Case #2 : Login
 
 |GENERAL CHARACTERISTICS||
 |:---|:---|
@@ -109,7 +109,7 @@
 |Due Date||
 |Etc||
 
-##### 2.2.1.3. Use Case #3 : Logout
+#### 2.2.1.3. Use Case #3 : Logout
 
 |GENERAL CHARACTERISTICS||
 |:---|:---|
