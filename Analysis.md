@@ -19,9 +19,11 @@
 
 ### 1.3. Technical Goals
 
--서버에 회원 정보, 자금흐름 등 관련 정보를 저장하게 하고, 이 정보들은 개인의 것이기에 본안만 수정할 수 있게 한다
--유저는 회원가입/로그인이 가능하고, 로그인을 해야 해당 정보에 접근할 수 있게 한다.
--기능을 실행할 때 결과를 빠르게 보여줄 수 있도록 적합한 알고리즘을 선택한다.
+- 서버에 회원 정보, 자금흐름 등 관련 정보를 저장하게 하고, 이 정보들은 개인의 것이기에 본안만 수정할 수 있게 한다
+
+- 유저는 회원가입/로그인이 가능하고, 로그인을 해야 해당 정보에 접근할 수 있게 한다.
+
+- 기능을 실행할 때 결과를 빠르게 보여줄 수 있도록 적합한 알고리즘을 선택한다.
 
 
 # 2. Use case analysis
@@ -31,7 +33,223 @@
 
 ### 2.2. Use case description
 
-#### 2.2.1. Use Case #1
+#### 2.2.1. Use Case #1 : Join
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.2. Use Case #2 : Login
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.3. Use Case #3 : Logout
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.4. Use Case #4 : Add Income
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.5. Use Case #5 : Modify Income
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.6. Use Case #6 : Delete Income
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.7. Use Case #7 : Delete Income
 
 |GENERAL CHARACTERISTICS||
 |:---|:---|
@@ -67,7 +285,43 @@
 |Due Date||
 |Etc||
 
-#### 2.2.2. Use Case #2
+#### 2.2.8. Use Case #8 : Add Expense
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.9. Use Case #9 : Modify Expense
 
 |GENERAL CHARACTERISTICS||
 |:---|:---|
@@ -98,6 +352,366 @@
 |RELATED INFORMATION||
 |:---|:---|
 |Performance|||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.10. Use Case #10 : Delete Expense
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.11. Use Case #11 : Search Financial Event
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.12. Use Case #12 : View Projected Balance
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.13. Use Case #13 : Simulate Expense
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.14. Use Case #14 : Check Overdraft Alert
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.15. Use Case #15 : Save Data
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.16. Use Case #16 : Add Fixed Expense
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.17. Use Case #17 : Modify Fixed Expense
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.18. Use Case #18 : Delete Fixed Expense
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
+|Frequency||
+|Concurrency||
+|Due Date||
+|Etc||
+
+#### 2.2.19. Use Case #19 : Calculate Depletion Data
+
+|GENERAL CHARACTERISTICS||
+|:---|:---|
+|Summary||
+|Level||
+|Author||
+|Last Updated||
+|Status||
+|Primary Actor||
+|Preconditions||
+|Trigger||
+|Success Post Condition||
+|Failed Post Condition||
+
+|MAIN SUCCESS SCENARIO||
+|:---|:---|
+|Step|Action|
+|1||
+|2||
+|3||
+
+|EXTENSION SCENARIO||
+|:---|:---|
+|Step|Branching Action|
+|1||
+|2||
+
+|RELATED INFORMATION||
+|:---|:---|
+|Performance||
 |Frequency||
 |Concurrency||
 |Due Date||
