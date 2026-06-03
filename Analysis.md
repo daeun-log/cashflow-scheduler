@@ -30,8 +30,7 @@
 # 2. Use case analysis
 
 ### 2.1. Use case diagram
-
-<img width="1238" height="1178" alt="UseCaseDiagram" src="https://github.com/user-attachments/assets/95fcd727-1f90-46b7-9765-3d4372079d17" />
+<img width="778" height="1542" alt="UseCaseDiagram2" src="https://github.com/user-attachments/assets/07010718-2b3c-4e28-a057-1847557286bf" />
 
 ### 2.2. Use case description
 
@@ -721,21 +720,18 @@ ex) 컬렉션 데이터 로컬 파일 저장, 프로그램 재시작 시 데이�
 
 # 4. User Interface prototype
 
-### 4.1. 로그인화면
-<img width="1668" height="1132" alt="UIprototypeLogin" src="https://github.com/user-attachments/assets/09818246-70a6-4203-b64b-94413151050e" />
+### 4.1. 로그인 및 회원가입 화면
+<img width="2383" height="1322" alt="UIprototype2Login Join" src="https://github.com/user-attachments/assets/7a34ee05-fb48-4724-808c-addc407c791f" />
 
-### 4.2. 회원가입화면
-<img width="1954" height="1324" alt="UIprototypeJoin" src="https://github.com/user-attachments/assets/d6a5f16d-3917-4c9c-b316-bdee66d457a0" />
+### 4.2. 메인화면
+<img width="2459" height="1342" alt="UIprototype2Main" src="https://github.com/user-attachments/assets/d6f9c573-835f-4ac6-86e2-11c52525d49d" />
 
-### 4.3. 메인(캘린더)화면
-<img width="1670" height="1208" alt="UIprototypeCalander" src="https://github.com/user-attachments/assets/f4b62789-4811-4785-997d-349f1b91843a" />
+### 4.3. 내역 관리 화면
+<img width="2498" height="1336" alt="UIprototype2Edit" src="https://github.com/user-attachments/assets/8f9e4e9d-d80e-43c3-a904-0f33441ff261" />
 
-### 4.4. 내역 관리 화면
-##### 4.4.1. 내역 기본(상세내용, 수정/삭제 버튼)
-<img width="1878" height="1062" alt="UIprototypeDetail" src="https://github.com/user-attachments/assets/7268af2e-c195-42a9-ac4f-14446e334d88" />
+### 4.4. 잔액부족 경고 화면
+<img width="2505" height="1320" alt="UIprototype2Alert" src="https://github.com/user-attachments/assets/a465a1c9-aa94-4d3a-bda1-b1dfcdea6184" />
 
-##### 4.4.2. 내역 수정
-<img width="1220" height="1062" alt="UIprototypeEdit" src="https://github.com/user-attachments/assets/57cbe933-0a46-403e-a0fd-2f16ca596618" />
 
 
 # 5. Glossary
