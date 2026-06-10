@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FA">
+
+    <!-- 현재 잔액 카드 -->
+    <LinearLayout
+        android:id="@+id/layout_balance_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 잔액"
+            android:textSize="12sp"
+            android:textColor="#757575"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_current_balance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0원"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#111111"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수정 ✎"
+                android:textSize="12sp"
+                android:textColor="#1A73E8"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 경고 배너 -->
+    <TextView
+        android:id="@+id/tv_overdraft_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="#D32F2F"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <!-- 내역 추가 버튼 -->
+    <Button
+        android:id="@+id/btn_add_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ 내역 추가"
+        android:backgroundTint="#111111"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- 월 네비게이터 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="2dp">
+
+        <Button
+            android:id="@+id/btn_prev_month"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="＜"
+            android:textSize="18sp"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="#111111"
+            android:padding="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_current_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2026년 6월"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#111111"/>
+
+        <Button
+            android:id="@+id/btn_next_month"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="＞"
+            android:textSize="18sp"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="#111111"
+            android:padding="0dp"/>
+    </LinearLayout>
+
+    <!-- 타임라인 헤더 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="4dp"
+        android:background="#F0F0F0">
+
+        <TextView android:layout_width="85dp" android:layout_height="wrap_content"
+            android:text="날짜" android:textSize="12sp" android:textColor="#9E9E9E"
+            android:padding="4dp"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="구분" android:textSize="12sp" android:textColor="#9E9E9E"
+            android:padding="4dp"/>
+        <TextView android:layout_width="80dp" android:layout_height="wrap_content"
+            android:text="금액" android:textSize="12sp" android:textColor="#9E9E9E"
+            android:gravity="end" android:padding="4dp"/>
+        <TextView android:layout_width="85dp" android:layout_height="wrap_content"
+            android:text="예상잔액" android:textSize="12sp" android:textColor="#9E9E9E"
+            android:gravity="end" android:padding="4dp"/>
+        <TextView android:layout_width="36dp" android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_timeline"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

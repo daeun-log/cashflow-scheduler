@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- 상단 헤더: 뒤로가기 + 제목 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="16dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="←"
+            android:textSize="18sp"
+            android:padding="0dp"
+            android:backgroundTint="#EEEEEE"
+            android:textColor="#111111"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_edit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="거래 추가"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#111111"/>
+    </LinearLayout>
+
+    <!-- 스크롤 가능한 폼 영역 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- 날짜 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="날짜"
+                android:textSize="13sp"
+                android:textColor="#757575"
+                android:layout_marginBottom="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_pick_date"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="📅"
+                    android:textSize="18sp"
+                    android:padding="0dp"
+                    android:backgroundTint="#EEEEEE"
+                    android:layout_marginEnd="8dp"/>
+
+                <EditText
+                    android:id="@+id/et_date"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:hint="YYYY-MM-DD"
+                    android:textSize="14sp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <!-- 구분 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="구분"
+                android:textSize="13sp"
+                android:textColor="#757575"
+                android:layout_marginBottom="6dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_type"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_edittext"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- 카테고리 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카테고리"
+                android:textSize="13sp"
+                android:textColor="#757575"
+                android:layout_marginBottom="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <Spinner
+                    android:id="@+id/spinner_category"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingStart="12dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btn_add_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="+ 추가"
+                    android:textSize="13sp"
+                    android:backgroundTint="#424242"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- 새 카테고리 입력 (GONE) -->
+            <EditText
+                android:id="@+id/et_new_category"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="새 카테고리 이름 입력"
+                android:textSize="14sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="6dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_confirm_category"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="추가"
+                android:backgroundTint="#1A73E8"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"/>
+
+            <!-- 상세내용 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상세내용"
+                android:textSize="13sp"
+                android:textColor="#757575"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/et_memo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="내역을 입력하세요"
+                android:textSize="14sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- 금액 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="금액 (원)"
+                android:textSize="13sp"
+                android:textColor="#757575"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/et_amount"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- 반복 주기 (고정지출 선택 시만 표시) -->
+            <EditText
+                android:id="@+id/et_cycle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="반복 주기 (개월 단위, 기본: 1)"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"/>
+
+            <!-- 추가 버튼 -->
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="추가"
+                android:textSize="16sp"
+                android:backgroundTint="#111111"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- 헤더: 제목 + X 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="상세 내역"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#111111"/>
+
+        <TextView
+            android:id="@+id/btn_detail_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:text="✕"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="#EEEEEE"/>
+
+    <!-- 기본 정보 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <TextView android:layout_width="80dp" android:layout_height="wrap_content"
+                android:text="날짜" android:textColor="#9E9E9E" android:textSize="13sp"/>
+            <TextView android:id="@+id/tv_detail_date"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="#111111" android:textSize="13sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <TextView android:layout_width="80dp" android:layout_height="wrap_content"
+                android:text="구분" android:textColor="#9E9E9E" android:textSize="13sp"/>
+            <TextView android:id="@+id/tv_detail_type"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="#111111" android:textSize="13sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <TextView android:layout_width="80dp" android:layout_height="wrap_content"
+                android:text="카테고리" android:textColor="#9E9E9E" android:textSize="13sp"/>
+            <TextView android:id="@+id/tv_detail_category"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="#111111" android:textSize="13sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <TextView android:layout_width="80dp" android:layout_height="wrap_content"
+                android:text="상세내용" android:textColor="#9E9E9E" android:textSize="13sp"/>
+            <TextView android:id="@+id/tv_detail_memo"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="#111111" android:textSize="13sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <TextView android:layout_width="80dp" android:layout_height="wrap_content"
+                android:text="금액" android:textColor="#9E9E9E" android:textSize="13sp"/>
+            <TextView android:id="@+id/tv_detail_amount"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="13sp" android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 고정지출 예정 내역 (고정지출일 때만 표시) -->
+    <LinearLayout
+        android:id="@+id/layout_fixed_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone">
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#EEEEEE" android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="향후 4개월 예정"
+            android:textSize="12sp"
+            android:textColor="#9E9E9E"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:id="@+id/tv_fixed_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#424242"
+            android:lineSpacingExtra="4dp"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="#EEEEEE"/>
+
+    <!-- 수정 / 삭제 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/btn_detail_edit"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="내역 수정"
+            android:backgroundTint="#1A73E8"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btn_detail_delete"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="내역 삭제"
+            android:backgroundTint="#E53935"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>

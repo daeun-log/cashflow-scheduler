@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/et_memo_filter"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:hint="상세내역 키워드 입력"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/rounded_edittext"/>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#F8F9FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자금 흐름 스케줄러"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1A73E8"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/et_login_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아이디"
+        android:inputType="text"
+        android:padding="14dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/et_login_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:padding="14dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:backgroundTint="#1A73E8"
+        android:textColor="#FFFFFF"
+        android:padding="14dp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_go_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계정이 없으신가요? 회원가입"
+        android:textColor="#1A73E8"
+        android:padding="8dp"/>
+</LinearLayout>
