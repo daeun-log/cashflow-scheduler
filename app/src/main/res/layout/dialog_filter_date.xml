@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/btn_pick_start"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="📅 시작일 선택"
+        android:backgroundTint="#EEEEEE"
+        android:textColor="#424242"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시작일 선택"
+        android:gravity="center"
+        android:textColor="#1A73E8"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_pick_end"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="📅 종료일 선택"
+        android:backgroundTint="#EEEEEE"
+        android:textColor="#424242"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="종료일 선택"
+        android:gravity="center"
+        android:textColor="#1A73E8"
+        android:textSize="14sp"/>
+</LinearLayout>

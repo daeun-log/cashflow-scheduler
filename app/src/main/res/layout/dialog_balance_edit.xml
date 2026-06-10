@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현재 잔액 수정"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="잔액 (원)"
+        android:textSize="12sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/et_new_balance"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textSize="15sp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="변경 원인"
+        android:textSize="12sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Spinner
+            android:id="@+id/spinner_reason"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_edittext"
+            android:paddingStart="10dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btn_add_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="+ 추가"
+            android:textSize="12sp"
+            android:backgroundTint="#424242"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- 새 원인 입력 + 확정 버튼 (평소 GONE) -->
+    <EditText
+        android:id="@+id/et_new_reason"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="새 원인 이름 입력"
+        android:textSize="13sp"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="4dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_confirm_reason"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="추가"
+        android:backgroundTint="#1A73E8"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="취소"
+            android:backgroundTint="#BDBDBD"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btn_dialog_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="저장"
+            android:backgroundTint="#111111"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>
